@@ -90,6 +90,7 @@ form input, form button {
     margin-bottom: 15px;
     border-radius: 5px;
     font-size: 1em;
+    border: none;
 }
 
 textarea{
@@ -99,6 +100,9 @@ textarea{
     max-width: 478px;
     margin-left: 39px;
     margin-right:39px;
+    text-align: center;
+    padding: 10px;
+    border: none;
 }
 
 form button {
