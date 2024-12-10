@@ -1,0 +1,211 @@
+/* Reset */
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #FB6376;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF9EC; /*primary background color*/
+    color: #5D2A42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    text-align: center;
+    
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #5D2A42;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #FCB1A6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    font-weight: bold;
+    color: #5D2A42;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFF9EC;
+    background-color: #5D2A42;
+    transition: background-color 0.3s ease;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    background: #FFDCCC;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+form label {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 39px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+
+}
+.taskinput{
+    max-width: 400px;
+    margin-left: 39px;
+    margin-right: 39px;
+    background-color: #FFF9FC;
+    text-align: center;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+textarea{
+    background-color: #FFF9FC;
+    border-radius: 5px;
+    font-size: 1em;
+    max-width: 478px;
+    margin-left: 39px;
+    margin-right:39px;
+}
+
+form button {
+    background-color: #FCB1A6;
+    color: #5D2A42;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button{
+    font-weight: bold;
+    width:87%;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #FCB1A6;
+    color: #5D2A42;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.delete-all{/**/
+    font-weight: bold;
+    width: 40%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #FCB1A6;
+    color: #5D2A42;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover, .delete-all:hover{
+    color: #FFF9EC;
+    background-color: #5D2A42;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    color: #FFF9EC;
+    background-color: #5D2A42;
+    transition: background-color 0.3s ease;
+}
+
+/* Task List Styling */
+ul {
+    color: #5D2A42;
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+}
+
+ul li {
+    background: #FFDCCC;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #5D2A42;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #FB6376;
+    transition: background-color 0.3s ease;
+}
+
+/* Task Details Section */
+#task-detail {
+    background: #FFDCCC;
+    color: #5D2A42;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Center Content for All Pages */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+@media (max-width: 768px){
+    ul{
+        flex-direction: column;
+    }
+}

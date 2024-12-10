@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Create a Task</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Create a Task</a>
+        <a href="tasks.html">View All Tasks</a>
+        <a href="settings.html">Settings</a>
+    </nav>
+
+    <form id="task-form">
+        <label for="task-name">Task Name:</label>
+        <input class="taskinput" type="text" id="task-name" required>
+
+        <label for="task-desc">Task Description:</label>
+        <textarea id="task-desc" required></textarea>
+
+        <label for="task-date">Due Date:</label>
+        <input class="taskinput" type="date" id="task-date" required>
+
+        <label for="task-time">Due Time:</label>
+        <input class="taskinput" type="time" id="task-time" required>
+
+        <label>Importance Level:</label>
+        <div>
+            <label><input type="radio" name="importance" value="Not Important" required> Not Important</label>
+            <label><input type="radio" name="importance" value="Somewhat Important"> Somewhat Important</label>
+            <label><input type="radio" name="importance" value="Important"> Important</label>
+            <label><input type="radio" name="importance" value="Very Important"> Very Important</label>
+            <label><input type="radio" name="importance" value="Urgent"> Urgent</label>
+        </div>
+
+        <button onclick="addTasks()">Save Task</button>
+    </form>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
